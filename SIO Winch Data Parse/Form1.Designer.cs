@@ -48,6 +48,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.comboBoxPayoutMin = new System.Windows.Forms.ComboBox();
             this.comboBoxTensionMin = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBoxSelectWinch = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // folderSelect
@@ -76,7 +78,7 @@
             // 
             // logFileView
             // 
-            this.logFileView.Location = new System.Drawing.Point(30, 28);
+            this.logFileView.Location = new System.Drawing.Point(30, 87);
             this.logFileView.Name = "logFileView";
             this.logFileView.Size = new System.Drawing.Size(694, 558);
             this.logFileView.TabIndex = 2;
@@ -224,11 +226,30 @@
             this.comboBoxTensionMin.Size = new System.Drawing.Size(121, 33);
             this.comboBoxTensionMin.TabIndex = 18;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(30, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(162, 25);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Selected Winch";
+            // 
+            // comboBoxSelectWinch
+            // 
+            this.comboBoxSelectWinch.FormattingEnabled = true;
+            this.comboBoxSelectWinch.Location = new System.Drawing.Point(211, 28);
+            this.comboBoxSelectWinch.Name = "comboBoxSelectWinch";
+            this.comboBoxSelectWinch.Size = new System.Drawing.Size(437, 33);
+            this.comboBoxSelectWinch.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1686, 781);
+            this.Controls.Add(this.comboBoxSelectWinch);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBoxTensionMin);
             this.Controls.Add(this.comboBoxPayoutMin);
             this.Controls.Add(this.label7);
@@ -278,6 +299,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBoxPayoutMin;
         private System.Windows.Forms.ComboBox comboBoxTensionMin;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBoxSelectWinch;
     }
 }
 

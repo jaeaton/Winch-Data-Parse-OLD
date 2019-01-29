@@ -53,6 +53,10 @@ namespace SIO_Winch_Data_Parse
             comboBoxTensionMin.Items.Add((float)200.0);
             comboBoxTensionMin.Items.Add((float)1000.0);
             comboBoxTensionMin.SelectedIndex = 1;
+
+            comboBoxSelectWinch.Items.Add((string) "SIO Traction Winch");
+            comboBoxSelectWinch.Items.Add((string) "MASH Winch");
+            comboBoxSelectWinch.SelectedIndex = 1;
         }
 
         private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
