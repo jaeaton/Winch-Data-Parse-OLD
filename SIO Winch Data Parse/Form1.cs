@@ -68,10 +68,20 @@ namespace SIO_Winch_Data_Parse
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK) //Opens folder selection dialog
             {
+                string extension;
                 filePath = folderBrowserDialog1.SelectedPath;   //Sets filePath variable to the selected path in dialog
                 DirectoryInfo di = new DirectoryInfo(filePath);
+                if(comboBoxSelectWinch.SelectedIndex == 1)
+                {
+                    extension = "*.CSV";
+                }
+                else
+                {
+                    extension = "*.Raw";
+
+                }
                 //var i = 0;
-                foreach (var fi in di.GetFiles("*.Raw"))
+                foreach (var fi in di.GetFiles(extension))
                 {
                     fileList.Add(fi.Name);
                 }
